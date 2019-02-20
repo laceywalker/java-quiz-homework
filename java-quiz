@@ -1,0 +1,29 @@
+1. many forms
+
+2. objects can take more than one form - depending on the context in which they are used. An example would be creating an
+interface called Nomz which could be implemented in Pizza class. All pizza objects could be
+changed to Nomz and used as Nomz objects.
+
+3. implementing it in classes and casting.
+
+4. many - it can only have one form at a time, and one form per situation but
+I suppose however many interfaces as are implemented in a class - thats how many forms an object can take.
+
+5. when I want to put things in an array that are different - if I want to make an array of food, I can't put
+a pizza object, a pasta object and call it Italian food. But I can make an interface of INomz  which
+which is implemented in both pizza and pasta classes and then make an array of INomz objects.
+
+6. there shouldn't be dependencies - higher classes should only be concerned with higher level stuff and not everything going
+on below them. Also if something changes in a dependent class, everything has to change. If we use composition, we can create
+relationships between classes using interfaces without having to make them dependent on each other.
+
+7. When you need to provide a method to more than one class without having them inherit everything else associated with the class.
+Using an interface to provide a method 'addCheese()'. This could be applied to pasta and pizza, but not icecream. It wouldn't make sense
+to add this method to a "Food" superclass because then everything would inherit it, even icecream. But it can be implemented as an
+ICheese interface.
+
+8. stronger, reusable code. less dependencies and easier to modify without changing everything.
+
+9. I don't understand what this question is asking. If you mean, what happens to the behaviors that come from an interface when
+the objects using them are destroyed - nothing. The methods are in the interface but not dependent on the object
+itself existing.
